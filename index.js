@@ -28,8 +28,8 @@ function isValidDate(input) {
   return outputDate instanceof Date && !isNaN(outputDate);
 }
 
-function getUnixTime(input) {
-  return Math.floor(input / 1000);
+function getUnixTime(date) {
+  return Math.floor(date);
 }
 
 // get date in utc and unix time
